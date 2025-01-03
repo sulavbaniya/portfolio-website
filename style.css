@@ -6,25 +6,36 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 1em 0;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background: #333; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0; 
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 1em;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.5em 1em; 
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
 }
 
 section {
