@@ -271,14 +271,20 @@ ul.social-media li a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: column;
-        padding: 10px 0;
+        flex-direction: row; /* Ensures horizontal layout even on smaller screens */
+        padding: 0 10px;
     }
 
     header nav ul li {
-        margin: 10px 0;
+        margin: 0 10px;
     }
 
+    header nav ul li a {
+        font-size: 1em; /* Slightly reduce the font size */
+        padding: 8px 12px; /* Adjust padding for better mobile view */
+    }
+
+    /* For smaller devices, reduce the overall font size */
     #home h1 {
         font-size: 2.5em;
     }
@@ -289,5 +295,14 @@ ul.social-media li a:hover {
 
     .btn {
         padding: 10px 25px;
+    }
+    
+    /* Reduce font sizes in other sections if needed */
+    #about h2, #projects h2, #contact h2 {
+        font-size: 2.2em;
+    }
+
+    #about p, #projects .project p, #contact form input, #contact form textarea {
+        font-size: 1em;
     }
 }
