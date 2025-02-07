@@ -8,7 +8,7 @@ form.addEventListener('submit', e => {
   const formData = new FormData(form)
   form.reset()
   
-  msg.innerHTML = "Message sent successfully"
+  msg.innerHTML = "Message sent successfully."
   setTimeout(function(){
     msg.innerHTML = ""
   }, 5000)
