@@ -172,7 +172,7 @@ header nav ul li a:hover {
 
 form {
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
     text-align: left;
     background-color: white;
     padding: 30px;
